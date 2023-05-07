@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(3, 3, 18);
+      }
+      nav {
+        width: 100%;
+        height: 12%;
+        background-color: black;
+        color: aliceblue;
+        display: flex;
+      }
+      nav ul {
+        display: flex;
+        align-content: center;
+      }
+      nav ul li {
+        list-style-type: none;
+        padding: 5px 5px;
+        margin: auto 10px;
+      }
+      img {
+        width: 30px;
+        border-radius: 30px;
+
+        width: 50px;
+      }
+      .container{
+        width: 70%;
+        height: 75vh;
+        border: 2px solid rgb(3, 3, 20);
+        margin:auto;
+        margin-top: 17px;
+        border-radius: 30px;
+        display: flex;
+         align-content: center;
+         background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&w=1000&q=80');
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+      h3{
+        margin: 5px auto;
+        font-family: 'Phudu', cursive ;
+        font-weight: bolder;
+        color:azure
+      }
+      .bottom{
+        width:70%;
+        
+        border: 2px solid green;
+        margin: 20px auto;
+        background-color: black;
+      }
+      .bottom #timespan{
+        margin: 10px auto;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="httpshttps://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&w=1000&q=80://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="img">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAMAAADV/VW6AAAAclBMVEUAAAAe12D///9xcXEf3GIf4GQQczMat1IcyVodzlwRdzUKSiEbwFYYq0wYqUwTgzsFJhEFIQ8XokgMVycKRR8IPBsQbzKhoaEGKhMPai8ZsE8VlEIWnUYJQR0RfTgWmUUUjD8DEwkHMxcCDQYDGAsOYiw39cJhAAAEZklEQVRoge2b63ajIBCAdYsKinfjJpomxjbv/4qLxisCKknKnlPm125i+IYR5gY1/igV49fj/34okb8d/sNQIh8ar/Ear/Ear/Ear/Ea///io0Pmedkh+nF85NkJhshsBUGc2N5+JSTxce5DYAFzIuS/0M/jH8CngTlHjyqYQfpmvIvY7F4D5L4Rn0MBu9MA5m/Ce84qvFXA8d6BD8EmOuGD8OX42LG2wRuxnC2bYAc+NTdOvTOAuWEPbMfbu+CtAvbr8PYOw/dirfK34mXohL/mAjbi5ejr89+GT3e/916AeP1twsey8EaE+28Tfpur40zfeRYfSr74h1gi/7cB7z0x93b+Av+/Af+M6Vu8wPzr+JydWABgdQLW4hDgx991PFxwiUDHP1fhhUhYXQMHPj7m8aE83h0HJfMFOKhy77Z87ObZpWNanByM6/xW8WgcJLhk3Gk8JMoTkoEu+UgWn46Dbcshv7OKWIHCW7zfruGD3pqg3ERvJavgPDcAgRw+Xp8AW9Jgvgw4rncFnw9mtO678GQxhmh8BxZn763g/WEKoOg/+6rTU1gmDsaQCMZOUIb39Mj4tT0k5cCXwUeTTW+VRyPOTqVD6jow2ebdvxH2Lx6tQ4x7PmTXf2L8zN1bCDd1Hde5NEVe4c41uA/TZzt+MX53kkM8kxN+jwPUvdvgpD1ifCITbYgGp69ugGzQK5HAY/40+5DDcvUAoLJuBzgPX2IJPFyMbLbLDMIiKauLbbthefZxuxipx8xzFtXX8QN22BHiI2RSgwITX+30QD9Yp/YZUiqQsDh1voi59IX4wxwPYCgqXI+nRFD5o4XOq/hsNoA4aXyId0a8zcKMlkK8N/u9dVrHN10fh+0amIbbg594/a/4WLcttc/DMaKzj7Rg1cL78ZTxO799cEsfI7PP9Yi7Lcq8nusdLBfBfuPTS6+4n0rcZFT0LiOqoMKdqnCg82OJpUdvPGE+Sb7ClwkDz5+U2HgstyMSoluR9v7WnW8BCbcjcLpcDSzcZRZUaSbjdGVCDrDgaWk5qZDDDLjgsd6bRIfkO6iNO/MnLBiG1N6TCrh0dUlyeFLfVKfPY/x9+yJyu31H9b0qINXkXaxQqXQjoixY3DNWTkd8XeYWSFTrSSVbk1TTXHX6tY25CsilmpNEu3l/FyGeSJZwQp5koj3r6gy59mdqX6pz4Bd+cA3d++fkB8eEbQG5MmMsslp+maVhQPx9k9V20ix7VITekF96jM6vbJE1LTEbG5qAad1mR1wHI7hL28uWmAadb3EFAKePyBWtonSBPW0vrCrQ+Tsjpb+Qby/sCzsWbtzLlVL5ieYKp7XEtYB5vtP0p1pLextri8X5XGNNdVtRcVNVdUtZdUNd8XGC6sOURd66lf6ioyTVB2mqjxFVH6KqPkI2FB+gG6qvDxiKL080ovTqSCNKL840ovTaUCvdpak2E0Y/fGlqVELVlbGXiMZrvMZrvMZrvMZrvMb/AF7xH8IqlN+N/wdke0f1mD9zLAAAAABJRU5ErkJggg=="
+          /><span><b>Spotify</b></span>
+        </li>
+
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="container">
+    <h3>Listen your favourite music and celebrate this day</h3>
+    </div>
+    <div class="bottom">
+        <input type="range"><span id="timespan"min="0" max="10"></span>
+    </div>
+  </body>
+</html>
